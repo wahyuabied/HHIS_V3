@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/lnr_isi_jota_prpinsi"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_nama_kota_provinsi"
+        android:text="Aceh"
+        android:padding="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"/>
+    <TextView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/black"/>
+
+</LinearLayout>

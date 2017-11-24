@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\7e265adba95c376e08383b152e00f856628616c9\\output\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\7e265adba95c376e08383b152e00f856628616c9\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_down.xml",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\anim\\slide_down.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_up.xml",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\anim\\slide_up.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\7e265adba95c376e08383b152e00f856628616c9\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\7e265adba95c376e08383b152e00f856628616c9\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\7e265adba95c376e08383b152e00f856628616c9\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\7e265adba95c376e08383b152e00f856628616c9\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    }
+]

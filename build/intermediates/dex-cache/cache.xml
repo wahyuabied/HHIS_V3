@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Mr Abid\.android\build-cache\3747f651e43a6fffe37cc2465a726370d6db27f9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\pre-dexed\debug\classes_7eb5c9e351b8dc2b5cb7e133d4a52d14563655e8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="86fd6dd232ebb3cdbe34188d63f3d9472571c3d7">
+        <dex dex="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5d79dfc82258487533039d9df26bc14792889c9e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6e07f5020c8f143de7895d22962581ce74d46bbb\classes.dex" />
+    </item>
+
+</items>

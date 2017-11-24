@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tab>
+<tab
+    id="@+id/home"
+    icon="@drawable/ic_home_black_24dp"
+    activeColor="@color/themes"
+    titleSize="@dimen/_6sdp"
+    title="Home"/>
+<tab
+    id="@+id/people"
+    icon="@drawable/ic_person_black_24dp"
+    activeColor="@color/themes"
+    titleSize="@dimen/_6sdp"
+    title="Profile"/>
+</Tab>

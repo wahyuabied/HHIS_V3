@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context="com.mrabid.hhis.Activity.BeforeMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/backgroundbefore"
+        android:id="@+id/rlt_imgV_slider">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/rlt_imgV_slider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        android:id="@+id/sliderDots"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:paddingRight="@dimen/_35sdp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_signIn_BeforeMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/themes"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rlt_google"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:adjustViewBounds="false"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/img_google"
+                android:background="@drawable/google"
+                android:cropToPadding="false" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Sign in With Google"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_alignBaseline="@+id/img_google"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:text="Lorem ipsum de gago mia k., love you ! "/>
+    </LinearLayout>
+
+
+</RelativeLayout>

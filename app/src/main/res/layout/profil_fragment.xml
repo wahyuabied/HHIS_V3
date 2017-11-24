@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrabid.hhis.Fragment.ProfilFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/background_profil"
+            android:padding="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_profil_profil"
+                android:src="@drawable/profil"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="@dimen/_170sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="John Johnes"
+                android:textStyle="bold"
+                android:id="@+id/txt_nama_profil"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@id/txt_nama_profil"
+                android:id="@+id/txt_line_profil"
+                android:background="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/txt_umur_profil"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/txt_line_profil"
+                android:text="29 years old, "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/_12sdp"
+                android:layout_toRightOf="@+id/txt_umur_profil"
+                android:id="@+id/txt_jenisKel_profil"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/txt_line_profil"
+                android:text="Male"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlt_personal_information"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/icon_personal_profil"
+                    android:tint="@color/themes"
+                    android:src="@drawable/ic_identity"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon_personal_profil"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Personal Information"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:id="@+id/img_personalInformation_profil_down"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_down"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:visibility="invisible"
+                    android:id="@+id/img_personalInformation_profil_up"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_up"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@color/dropdown_color"
+                android:id="@+id/lnr_detail_personal_information_profil"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_below="@+id/rlt_personal_information"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Email :"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_email_profil"
+                    android:text="JohnesSejati@mail.com"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="Golongan Darah:"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_golongan_darah_profil"
+                    android:text="AB"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="Tinggi Badan:"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_tinggi_badan_profil"
+                    android:text="2,31 meter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="Berat Badan:"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_berat_badan_profil"
+                    android:text="150 Kg"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlt_emergency_contact_profil"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_call"
+                    android:id="@+id/icon_phone_profile"
+                    android:tint="@color/themes"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon_phone_profile"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Emergency Contact"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:id="@+id/img_emergencyContact_profil_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_down"/>
+
+                <ImageButton
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:id="@+id/img_emergencyContact_profil_up"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_up"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@color/dropdown_color"
+                android:id="@+id/lnr_detail_emergency_contact_profil"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_below="@+id/rlt_emergency_contact_profil"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Phone : " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_phone_profil"
+                    android:text="082132736155" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlt_address_information_profil"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_address"
+                    android:id="@+id/icon_address_profil"
+                    android:tint="@color/themes"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon_address_profil"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Address Information"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:id="@+id/img_addressInformation_profil_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_down"/>
+                <ImageButton
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:id="@+id/img_addressInformation_profil_up"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_up"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@color/dropdown_color"
+                android:id="@+id/lnr_detail_address_information_profil"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_below="@+id/rlt_address_information_profil"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Alamat :"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_address_information_profil"
+                    android:text="Jl. Sambungrejo Rt:18 Rw:07 Sukodono, Sidoarjo"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlt_forbidden_thing_profil"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_larangan"
+                    android:tint="@color/themes"
+                    android:id="@+id/icon_larangan_profil"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon_larangan_profil"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Forbidden Thing"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/img_forbiddenInformation_profil_down"
+                    android:background="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_down"/>
+                <ImageButton
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/img_forbiddenInformation_profil_up"
+                    android:background="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_up"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@color/dropdown_color"
+                android:id="@+id/lnr_detail_forbidden_thing_profil"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_below="@+id/rlt_forbidden_thing_profil"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Larangan :"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_larangan_profil"
+                    android:text="Berdandan"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="Penyakit :"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_diagnosa_profil"
+                    android:text="Kutukan tampan abadi"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlt_private_information_profil"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_private"
+                    android:id="@+id/icon_private_profil"
+                    android:tint="@color/themes"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon_private_profil"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Private Information"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_privateInformation_profil_down"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_down"/>
+                <ImageButton
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_privateInformation_profil_up"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_up"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@color/dropdown_color"
+                android:id="@+id/lnr_private_information_profil"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_below="@+id/rlt_private_information_profil"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Username :"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_username_profil"
+                    android:text="AbidTampan"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="Password :"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_password_profil"
+                    android:text="TampanSekali"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlt_my_doctor_information_profil"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/icon_mydoctor_information"
+                    android:src="@drawable/ic_doctor_information"
+                    android:tint="@color/themes"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/icon_mydoctor_information"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="My Docter Information"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_docterInformation_profil_down"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_down"/>
+
+                <ImageButton
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_docterInformation_profil_up"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_up"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@color/dropdown_color"
+                android:id="@+id/lnr_my_doctor_information_profil"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_below="@+id/rlt_my_doctor_information_profil"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rcy_list_dokter_profil"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        </LinearLayout>
+
+</ScrollView>

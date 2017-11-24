@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="BlueSignUp">#49af69</color>
+    <color name="colorPrimaryDark">#13866f</color>
+    <color name="colorAccent">#16a085</color>
+    <color name="bg_login">#0fba31</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="black">#000000</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="back_edtText">#d2f5af</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="dropdown_color">#fafffb</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login_bg">#29ac4e</color>
+    <color name="graph">#91ba1e</color>
+    <color name="lbl_name">#333333</color>
+    <color name="history">#ff6861</color>
+    <color name="bg_layout">#26ae90</color>
+    <color name="themes">#16a085</color>
+    <color name="th">#5ef477</color>
+    <color name="red">#e41123</color>
+    <color name="title">#0d8041</color>
+    <color name="backgroundSetting">#f4f4ef</color>
+    <color name="line">#cecebf</color>
+    <color name="backSignIn">#e1f9db</color>
+    <color name="transparant">#00fdfdfd</color>
+    <color name="background_profil">#b2dfc9</color>
+    <color name="icon_profil">#d92d892d</color>
+    <color name="about">#d9f98921</color>
+</resources>

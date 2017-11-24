@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.mrabid.hhis.SignUpActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/toolbars"
+                layout="@layout/main_toolbar"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="@dimen/_25sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:src="@drawable/logo_tulisan"
+                android:layout_below="@id/toolbars"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_signUp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-20dp"
+                    android:layout_below="@id/img_signUp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Create Your Health Account"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="@color/themes"
+                        android:id="@+id/title_signUp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_below="@id/title_signUp"
+                        android:id="@+id/edt_namaPasien_signUp"
+                        android:hint="Nama Pasien"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:hint="Email"
+                        android:inputType="textNoSuggestions"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_below="@+id/edt_namaPasien_signUp"
+                        android:id="@+id/edt_email_signUp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/edt_lyt_pass_signUp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        app:passwordToggleEnabled="true"
+                        app:hintEnabled="false"
+                        app:hintAnimationEnabled="false"
+                        android:animationCache="false"
+                        android:layout_below="@+id/edt_email_signUp"
+                        android:layout_height="@dimen/_40sdp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:id="@+id/edt_password_signUp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:hint="Nik"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:inputType="number"
+                        android:layout_below="@+id/edt_lyt_pass_signUp"
+                        android:id="@+id/edt_nik_signUp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:id="@+id/btn_RegisterSignUp"
+                        android:src="@drawable/ic_arrow_next"
+                        android:textColor="@color/white"
+                        android:text="Next"
+                        android:background="@drawable/background_button_signup"
+                        android:backgroundTint="@color/themes"
+                        android:layout_below="@id/edt_nik_signUp"/>
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+</ScrollView>
