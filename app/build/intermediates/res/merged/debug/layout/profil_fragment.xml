@@ -31,7 +31,6 @@
                 android:layout_width="@dimen/_170sdp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
-                android:text="John Johnes"
                 android:textStyle="bold"
                 android:id="@+id/txt_nama_profil"
                 android:textColor="@color/black"
@@ -51,8 +50,7 @@
                 android:textSize="@dimen/_12sdp"
                 android:id="@+id/txt_umur_profil"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:layout_below="@+id/txt_line_profil"
-                android:text="29 years old, "/>
+                android:layout_below="@+id/txt_line_profil" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -61,8 +59,7 @@
                 android:layout_toRightOf="@+id/txt_umur_profil"
                 android:id="@+id/txt_jenisKel_profil"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:layout_below="@+id/txt_line_profil"
-                android:text="Male"/>
+                android:layout_below="@+id/txt_line_profil" />
 
         </RelativeLayout>
 
@@ -134,8 +131,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txt_email_profil"
-                    android:text="JohnesSejati@mail.com"/>
+                    android:id="@+id/txt_email_profil" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -146,8 +142,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txt_golongan_darah_profil"
-                    android:text="AB"/>
+                    android:id="@+id/txt_golongan_darah_profil" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -158,8 +153,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txt_tinggi_badan_profil"
-                    android:text="2,31 meter"/>
+                    android:id="@+id/txt_tinggi_badan_profil" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -170,8 +164,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txt_berat_badan_profil"
-                    android:text="150 Kg"/>
+                    android:id="@+id/txt_berat_badan_profil" />
 
             </LinearLayout>
 
@@ -244,8 +237,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_phone_profil"
-                    android:text="082132736155" />
+                    android:id="@+id/tv_phone_profil"/>
             </LinearLayout>
 
         </RelativeLayout>
@@ -315,8 +307,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_address_information_profil"
-                    android:text="Jl. Sambungrejo Rt:18 Rw:07 Sukodono, Sidoarjo"/>
+                    android:id="@+id/tv_address_information_profil" />
 
             </LinearLayout>
 
@@ -387,8 +378,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_larangan_profil"
-                    android:text="Berdandan"/>
+                    android:id="@+id/tv_larangan_profil"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -398,8 +388,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_diagnosa_profil"
-                    android:text="Kutukan tampan abadi"/>
+                    android:id="@+id/tv_diagnosa_profil" />
 
             </LinearLayout>
 
@@ -472,8 +461,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_username_profil"
-                    android:text="AbidTampan"/>
+                    android:id="@+id/tv_username_profil"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -483,8 +471,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_password_profil"
-                    android:text="TampanSekali"/>
+                    android:id="@+id/tv_password_profil" />
 
             </LinearLayout>
 
@@ -545,8 +532,6 @@
                 android:background="@color/dropdown_color"
                 android:id="@+id/lnr_my_doctor_information_profil"
                 android:orientation="vertical"
-                android:paddingTop="@dimen/_10sdp"
-                android:paddingLeft="@dimen/_15sdp"
                 android:layout_below="@+id/rlt_my_doctor_information_profil"
                 android:layout_height="wrap_content">
                 <android.support.v7.widget.RecyclerView

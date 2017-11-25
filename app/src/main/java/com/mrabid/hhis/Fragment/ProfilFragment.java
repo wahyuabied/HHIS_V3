@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,8 +25,10 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mrabid.hhis.Adapter.RecyclerDokterAdapter;
 import com.mrabid.hhis.Helper.AppConfig;
 import com.mrabid.hhis.Helper.SharedPref;
+import com.mrabid.hhis.Modal.Dokter;
 import com.mrabid.hhis.Modal.Pasien;
 import com.mrabid.hhis.R;
 
@@ -35,7 +38,6 @@ import java.util.Map;
 
 public class ProfilFragment extends Fragment {
 
-    RecyclerView rcyartikel;
     LinearLayout personalLinear,emergencyLinear,addressLinear,forbiddenLinear,privateLinear,myDoctorLinear;
     ImageButton personalInformationUp,personalInformationDown,
             emergencyContactUp,emergencyContactDown,
@@ -44,13 +46,16 @@ public class ProfilFragment extends Fragment {
             privateInformationUp,privateInformationDown,
             mydoctorInformtionUp,mydoctorInformtionDown;
 
+    RecyclerView rcyDaftarDokter;
+
     ProgressDialog progress;
     Gson gson;
     RequestQueue requestQueue;
     SharedPref sharedPref ;
 
     TextView nama,umur,jenisKelamin,emailPasien,golonganDarah,tinggiBadan,beratBadan,phone,alamat,larangan,penyakit,username,password,email,namaDokter,noTelpDokter,alamatPraktik,alamatRumah;
-    Pasien pasien = new Pasien();
+    ArrayList<Pasien> pasien = new ArrayList<>();
+    ArrayList<Dokter> dokter = new ArrayList<>();
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -86,6 +91,9 @@ public class ProfilFragment extends Fragment {
         forbiddenLinear = (LinearLayout)getActivity().findViewById(R.id.lnr_detail_forbidden_thing_profil);
         privateLinear = (LinearLayout)getActivity().findViewById(R.id.lnr_private_information_profil);
         myDoctorLinear = (LinearLayout)getActivity().findViewById(R.id.lnr_my_doctor_information_profil);
+
+
+        rcyDaftarDokter = (RecyclerView)getActivity().findViewById(R.id.rcy_list_dokter_profil);
 
         personalInformationDown.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -215,6 +223,8 @@ public class ProfilFragment extends Fragment {
         progress.show();
 
         getProfil();
+        getDokter();
+
 
     }
 
@@ -245,37 +255,41 @@ public class ProfilFragment extends Fragment {
                             posts.setStatus("error");
                         }
                         if(posts.getStatus().equalsIgnoreCase("sukses")){
-                            Toast.makeText(getActivity(), posts.getData().get(0).getEmail().toString(), Toast.LENGTH_SHORT).show();
                             Log.d("Response",posts.getData().get(0).getEmail().toString());
                             if(posts.getData().size()==0){
                                 Toast.makeText(getActivity(), "Data Kosong", Toast.LENGTH_SHORT).show();
                             }else {
                                 //set text disini krena nilainya null ketika diatas
-                               pasien = new Pasien(posts.getData().get(0).getId_pasien(),
-                                        posts.getData().get(0).getNama_pasien(),
-                                        posts.getData().get(0).getUmur(),
-                                        posts.getData().get(0).getJenis_kelamin(),
-                                        posts.getData().get(0).getEmail(),
-                                        posts.getData().get(0).getGolongan_darah(),
-                                        posts.getData().get(0).getBerat_badan(),
-                                        posts.getData().get(0).getTinggi_badan(),
-                                        posts.getData().get(0).getRiwayat_penyakit_keluarga(),
-                                        posts.getData().get(0).getAlamat(),
-                                        posts.getData().get(0).getLarangan(),
-                                        posts.getData().get(0).getPemeriksaan_terbaru(),
-                                        posts.getData().get(0).getDokter()
-                                );
-                                nama.setText(String.valueOf(pasien.getNama_pasien()));
-                                umur.setText(String.valueOf(pasien.getUmur())+"Tahun, ");
-                                jenisKelamin.setText(pasien.getJenis_kelamin());
-                                emailPasien.setText(pasien.getEmail());
-                                golonganDarah.setText(pasien.getGolongan_darah());
-                                tinggiBadan.setText(String.valueOf(pasien.getTinggi_badan())+"Cm");
-                                beratBadan.setText(String.valueOf(pasien.getBerat_badan())+"Kg");
-                                alamat.setText(pasien.getAlamat());
-                                penyakit.setText(pasien.getRiwayat_penyakit_keluarga());
-                                username.setText("API Belum Lengkap");
-                                password.setText("API Belum Lengkap");
+                                for(int i=0;i<posts.getData().size();i++){
+                                    pasien.add(new Pasien(posts.getData().get(i).getId_pasien(),
+                                            posts.getData().get(i).getId_riwayat(),
+                                            posts.getData().get(i).getNama_pasien(),
+                                            posts.getData().get(i).getUmur(),
+                                            posts.getData().get(i).getJenis_kelamin(),
+                                            posts.getData().get(i).getEmail(),
+                                            posts.getData().get(i).getGolongan_darah(),
+                                            posts.getData().get(i).getTinggi_badan(),
+                                            posts.getData().get(i).getBerat_badan(),
+                                            posts.getData().get(i).getNo_telp(),
+                                            posts.getData().get(i).getAlamat(),
+                                            posts.getData().get(i).getLarangan(),
+                                            posts.getData().get(i).getDiagnosa()));
+                                }
+
+                                username.setText(pasien.get(0).getEmail());
+                                password.setText(sharedPref.loadData("password").toString());
+
+                                nama.setText(pasien.get(0).getNama_pasien().toString());
+                                umur.setText(String.valueOf(pasien.get(0).getUmur())+"tahun ,");
+                                jenisKelamin.setText(pasien.get(0).getJenis_kelamin());
+                                emailPasien.setText(pasien.get(0).getEmail().toString());
+                                golonganDarah.setText(pasien.get(0).getGolongan_darah().toString());
+                                tinggiBadan.setText(pasien.get(0).getTinggi_badan()+"Cm");
+                                beratBadan.setText(pasien.get(0).getBerat_badan()+" Kg");
+                                phone.setText(pasien.get(0).getNo_telp().toString());
+                                alamat.setText(pasien.get(0).getAlamat().toString());
+                                larangan.setText(pasien.get(0).getLarangan().toString());
+                                penyakit.setText(pasien.get(0).getDiagnosa().toString());
                             }
                         }else{
                             Toast.makeText(getActivity(), "Data tidak masuk", Toast.LENGTH_SHORT).show();
@@ -302,6 +316,98 @@ public class ProfilFragment extends Fragment {
         requestQueue.add(postRequest);
     }
 
+
+    public void getDokter(){
+        String id_user = sharedPref.loadData("id");
+        requestQueue = Volley.newRequestQueue(getActivity());
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.setDateFormat("M/d/yy hh:mm a");
+        gson = gsonBuilder.create();
+
+        String url = AppConfig.DOKTER+id_user;
+        StringRequest postRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>()
+                {
+                    @Override
+                    public void onResponse(String response) {
+                        progress.hide();
+                        ResponseDokter posts =  new ResponseDokter();
+                        try{
+                            posts =  gson.fromJson(response, ResponseDokter.class);
+                        }catch(Exception e){
+                            posts.setStatus("error");
+                        }
+                        if(posts.getStatus().equalsIgnoreCase("sukses")){
+                            Log.d("Response",posts.getData().get(0).getEmail().toString());
+                            if(posts.getData().size()==0){
+                                for(int i=0;i<1;i++){
+                                    dokter.add(new Dokter());
+                                }
+                            }else {
+                               for(int i=0;i<posts.getData().size();i++){
+                                   dokter.add(new Dokter(posts.getData().get(i).getNama_dokter(),
+                                           posts.getData().get(i).getNo_telp_dokter(),
+                                           posts.getData().get(i).getAlamat_praktik(),
+                                           posts.getData().get(i).getAlamat_rumah(),
+                                           posts.getData().get(i).getEmail()));
+                               }
+                            }
+                            rcyDaftarDokter.setHasFixedSize(true);
+                            rcyDaftarDokter.setLayoutManager(new LinearLayoutManager(getActivity()));
+                            rcyDaftarDokter.setAdapter(new RecyclerDokterAdapter(getActivity(), dokter));
+                        }else{
+                            Toast.makeText(getActivity(), "Data tidak masuk", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                },
+                new Response.ErrorListener()
+                {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("Response", error.toString());
+                        Toast.makeText(getActivity(), "Cek paket data anda", Toast.LENGTH_SHORT).show();
+                        progress.dismiss();
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String>  params = new HashMap<String, String>();
+                return params;
+            }
+        };
+        requestQueue.add(postRequest);
+    }
+
+    public class ResponseDokter{
+        private String status;
+        ArrayList<Dokter> data;
+
+        public ResponseDokter(String status, ArrayList<Dokter> data) {
+            this.status = status;
+            this.data = data;
+        }
+
+        public ResponseDokter() {
+        }
+
+        public String getStatus() {
+            return status;
+        }
+
+        public void setStatus(String status) {
+            this.status = status;
+        }
+
+        public ArrayList<Dokter> getData() {
+            return data;
+        }
+
+        public void setData(ArrayList<Dokter> data) {
+            this.data = data;
+        }
+    }
 
     public class ResponseProfil{
         private String status;

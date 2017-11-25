@@ -79,8 +79,6 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 progress.show();
-                sharedPref.saveData("password",passwordLogin.getText().toString());
-                sharedPref.saveData("username",usernameLogin.getText().toString());
                 Login();
 
                     }

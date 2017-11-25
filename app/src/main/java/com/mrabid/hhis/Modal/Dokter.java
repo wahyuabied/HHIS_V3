@@ -5,29 +5,26 @@ package com.mrabid.hhis.Modal;
  */
 
 public class Dokter {
-    private String email;
     private String nama_dokter;
     private String no_telp_dokter;
     private String alamat_praktik;
     private String alamat_rumah;
+    private String email;
 
-    public Dokter(String email, String nama_dokter, String no_telp_dokter, String alamat_praktik, String alamat_rumah) {
-        this.email = email;
+    public Dokter(String nama_dokter, String no_telp_dokter, String alamat_praktik, String alamat_rumah, String email) {
         this.nama_dokter = nama_dokter;
         this.no_telp_dokter = no_telp_dokter;
         this.alamat_praktik = alamat_praktik;
         this.alamat_rumah = alamat_rumah;
+        this.email = email;
     }
 
     public Dokter() {
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+        this.nama_dokter = "Anda tidak memiliki riwayat Penyakit";
+        this.no_telp_dokter = "";
+        this.alamat_praktik = "";
+        this.alamat_rumah = "";
+        this.email = "";
     }
 
     public String getNama_dokter() {
@@ -60,5 +57,13 @@ public class Dokter {
 
     public void setAlamat_rumah(String alamat_rumah) {
         this.alamat_rumah = alamat_rumah;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

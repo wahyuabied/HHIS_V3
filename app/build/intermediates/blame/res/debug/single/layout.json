@@ -1,11 +1,15 @@
 [
     {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\7e265adba95c376e08383b152e00f856628616c9\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bb_bottom_bar_item_container_tablet.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\ced75026badb2862db80712656a6c0848e5071b6\\output\\res\\layout\\bb_bottom_bar_item_container_tablet.xml"
     },
     {
-        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\7e265adba95c376e08383b152e00f856628616c9\\output\\res\\layout\\design_navigation_item_header.xml"
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_detail_dokter.xml",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\layout\\activity_detail_dokter.xml"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
@@ -198,6 +202,10 @@
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\isi_dokter.xml",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\layout\\isi_dokter.xml"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",

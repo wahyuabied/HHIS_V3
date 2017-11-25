@@ -5,10 +5,9 @@ package com.mrabid.hhis.Helper;
  */
 
 public class AppConfig {
-    //Server getRiwyatPasien
-    public static String DATA_URL="http://192.168.43.161/android_login_api/getdata.php?no_ktp=";
 
-    //Server Artikel
+    public static String DOKTER = "http://hhis.tk/api/web/index.php/v1/pasien/dokter?id_user=";
+
     public static String ARTIKEL="http://hhis.tk/api/web/index.php/v1/artikel/index";
 
     public static String PASIEN="http://hhis.tk/api/web/index.php/v1/pasien/view?id_user=";

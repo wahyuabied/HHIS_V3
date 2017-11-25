@@ -17,16 +17,17 @@
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_image_slider"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_300sdp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
         </android.support.v4.view.ViewPager>
     </RelativeLayout>
     <LinearLayout
-        android:layout_below="@id/rlt_imgV_slider"
+        android:layout_above="@+id/lnr_signin"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_10sdp"
         android:id="@+id/sliderDots"
+        android:layout_marginBottom="@dimen/_40sdp"
         android:orientation="horizontal"
         android:gravity="center_vertical|center_horizontal">
 
@@ -37,6 +38,7 @@
         android:layout_marginBottom="@dimen/_50sdp"
         android:paddingRight="@dimen/_35sdp"
         android:orientation="vertical"
+        android:id="@+id/lnr_signin"
         android:paddingLeft="@dimen/_35sdp"
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content">
@@ -49,36 +51,13 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:id="@+id/rlt_google"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:adjustViewBounds="false"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:id="@+id/img_google"
-                android:background="@drawable/google"
-                android:cropToPadding="false" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
-                android:text="Sign in With Google"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:gravity="center_vertical|center_horizontal"
-                android:layout_alignBaseline="@+id/img_google"/>
-
-        </RelativeLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="13sp"
-            android:text="Lorem ipsum de gago mia k., love you ! "/>
+            android:text="@string/jargon"/>
     </LinearLayout>
 
 

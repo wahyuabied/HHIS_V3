@@ -39,8 +39,10 @@
         <activity android:name=".NextSignUpActivity" />
         <activity android:name=".Activity.ArtikelActivity" />
         <activity android:name=".Activity.RiwayatPasienActivity" />
-        <activity android:name=".Activity.BeforeMainActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.BeforeMainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.DetailDokterActivity"></activity>
     </application>
 
 </manifest>

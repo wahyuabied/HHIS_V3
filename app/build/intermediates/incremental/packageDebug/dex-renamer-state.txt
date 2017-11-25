@@ -1,4 +1,7 @@
-#Fri Nov 24 08:22:13 ICT 2017
-base.0=B\:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Sat Nov 25 15:10:32 ICT 2017
+base.0=B\:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6e07f5020c8f143de7895d22962581ce74d46bbb
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=B\:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.1=B\:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5d79dfc82258487533039d9df26bc14792889c9e\\classes.dex
+base.1=B\:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5d79dfc82258487533039d9df26bc14792889c9e
+file.0=B\:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6e07f5020c8f143de7895d22962581ce74d46bbb\\classes.dex
