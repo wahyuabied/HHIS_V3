@@ -130,7 +130,8 @@ public class SettingActivity extends AppCompatActivity {
                             tv_telepon.setText(dataSetting.get(0).getNo_telp()+"");
                             tv_alamat.setText(dataSetting.get(0).getAlamat()+"");
                             Glide.with(SettingActivity.this).load("http://hhis.tk/backend/web/"+dataSetting.get(0).getImage()).into(image);
-                        }else{
+
+                        } else{
                             Toast.makeText(SettingActivity.this, "Server error", Toast.LENGTH_SHORT).show();
                         }
                     }

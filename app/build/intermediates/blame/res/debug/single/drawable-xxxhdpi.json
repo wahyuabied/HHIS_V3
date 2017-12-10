@@ -1,11 +1,11 @@
 [
     {
-        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_call.png",
-        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_call.png"
-    },
-    {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_library_books.png",
         "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_library_books.png"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_call.png",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_call.png"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_account_balance_black_24dp.png",

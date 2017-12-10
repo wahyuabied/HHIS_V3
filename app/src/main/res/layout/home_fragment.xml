@@ -5,7 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:layout_width="match_parent">
 
     <LinearLayout
@@ -13,30 +12,36 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/white"
+        android:paddingTop="@dimen/_20sdp"
         tools:context="com.mrabid.hhis.Fragment.HomeFragment">
 
-        <ImageView
-            android:layout_width="@dimen/_300sdp"
-            android:layout_gravity="center_horizontal"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_150sdp"
-            android:id="@+id/imgv_judul_home"
-            android:paddingRight="@dimen/_20sdp"
-            android:paddingLeft="@dimen/_20sdp"
-            android:src="@drawable/logo_tulisan"/>
+            android:id="@+id/circle_profil_home"
+            android:layout_gravity="center"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Check your Health"
             android:layout_gravity="center"
-            android:id="@+id/txt_judul_home"
+            android:id="@+id/tv_nama_home"
             android:textSize="@dimen/_20sdp"
             android:layout_marginBottom="@dimen/_20sdp"
             android:textColor="@color/themes"
             android:textStyle="bold" />
 
-        <LinearLayout
+        <View
             android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/themes"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
             android:layout_height="wrap_content">
 
             <LinearLayout
@@ -49,9 +54,13 @@
                     android:id="@+id/lnr_atas1_home"
                     android:layout_height="wrap_content">
                     <ImageButton
+                        android:padding="@dimen/_5sdp"
                         android:layout_width="@dimen/_140sdp"
-
+                        android:src="@drawable/img_graph"
+                        android:background="@drawable/background_button_signup"
+                        android:backgroundTint="@color/themes"
                         android:id="@+id/rlt_graph"
+                        android:scaleType="fitCenter"
                         android:layout_height="@dimen/_140sdp" />
                 </LinearLayout>
 
@@ -61,7 +70,11 @@
                     android:layout_height="wrap_content">
                     <ImageButton
                         android:layout_width="@dimen/_140sdp"
-
+                        android:src="@drawable/img_history"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/background_button_signup"
+                        android:backgroundTint="@color/themes"
+                        android:scaleType="fitCenter"
                         android:id="@+id/rlt_history"
                         android:layout_height="@dimen/_140sdp" />
                 </LinearLayout>
@@ -78,7 +91,11 @@
                     android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="@dimen/_140sdp"
-
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/img_health_news"
+                    android:background="@drawable/background_button_signup"
+                    android:backgroundTint="@color/themes"
+                    android:scaleType="fitCenter"
                     android:id="@+id/rlt_artikel"
                     android:layout_height="@dimen/_140sdp" />
                 </LinearLayout>
@@ -89,7 +106,12 @@
                     android:layout_height="wrap_content">
                     <ImageButton
                         android:layout_width="@dimen/_140sdp"
-
+                        android:background="@drawable/background_button_signup"
+                        android:backgroundTint="@color/themes"
+                        android:padding="@dimen/_5sdp"
+                        android:id="@+id/imgbtn_about_home"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_about"
                         android:layout_height="@dimen/_140sdp" />
                 </LinearLayout>
 

@@ -43,8 +43,10 @@
             android:name=".Activity.BeforeMainActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".Activity.DetailDokterActivity" />
-        <activity android:name=".GraphActivity"
-            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".GraphActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>

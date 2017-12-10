@@ -44,12 +44,12 @@
         "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_arrow_down.png"
     },
     {
-        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_identity.png",
-        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_identity.png"
-    },
-    {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_call.png",
         "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_call.png"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_identity.png",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_identity.png"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_riwayat.png",

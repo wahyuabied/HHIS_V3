@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\And
 	android:name
 		ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:8:5-48:19
+ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:8:5-50:19
 MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\Mr Abid\.android\build-cache\6b32cfc28944368d09cf267f1d6fb2ba8e158c7b\output\AndroidManifest.xml:5:5-19
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Mr Abid\.android\build-cache\3747f651e43a6fffe37cc2465a726370d6db27f9\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\Mr Abid\.android\build-cache\e8b3e3a2403f51ffec909052bfb8125f90e689c6\output\AndroidManifest.xml:9:5-20
@@ -125,11 +125,15 @@ ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\And
 	android:name
 		ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:45:19-64
 activity#com.mrabid.hhis.GraphActivity
-ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:46:9-47:62
+ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:46:9-48:53
 	android:screenOrientation
-		ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:47:13-50
+		ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:48:13-50
 	android:name
-		ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:46:19-48
+		ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:47:13-42
+activity#com.mrabid.hhis.AboutActivity
+ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:49:9-60
+	android:name
+		ADDED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml:49:19-48
 uses-sdk
 INJECTED from B:\Project_Android\Project_Maker\Android_HHIS-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\Mr Abid\.android\build-cache\6b32cfc28944368d09cf267f1d6fb2ba8e158c7b\output\AndroidManifest.xml:3:5-72

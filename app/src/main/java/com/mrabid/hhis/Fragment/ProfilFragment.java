@@ -285,6 +285,7 @@ public class ProfilFragment extends Fragment {
                                 username.setText(pasien.get(0).getEmail());
                                 password.setText(sharedPref.loadData("password").toString());
                                 Glide.with(getActivity()).load("http://hhis.tk/backend/web/"+pasien.get(0).getImage()).into(imageProf);
+
                                 nama.setText(pasien.get(0).getNama_pasien().toString());
                                 umur.setText(String.valueOf(pasien.get(0).getUmur())+"tahun ,");
                                 jenisKelamin.setText(pasien.get(0).getJenis_kelamin());

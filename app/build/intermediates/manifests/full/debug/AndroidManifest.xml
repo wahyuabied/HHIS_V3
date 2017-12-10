@@ -56,6 +56,7 @@
         <activity
             android:name="com.mrabid.hhis.GraphActivity"
             android:screenOrientation="landscape" />
+        <activity android:name="com.mrabid.hhis.AboutActivity" />
     </application>
 
 </manifest>

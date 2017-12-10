@@ -72,6 +72,10 @@
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\layout\\activity_about.xml"
+    },
+    {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\layout\\notification_action_tombstone.xml"
     },
