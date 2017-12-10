@@ -7,17 +7,19 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.mrabid.hhis.Activity.ArtikelActivity;
 import com.mrabid.hhis.Activity.RiwayatPasienActivity;
+import com.mrabid.hhis.GraphActivity;
 import com.mrabid.hhis.R;
 
 public class HomeFragment extends Fragment {
 
 
-    RelativeLayout riwayat,artikel, graph;;
+    ImageButton riwayat,artikel, graph;;
 
 
     @Override
@@ -25,9 +27,9 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        graph = (RelativeLayout) getActivity().findViewById(R.id.rlt_graph);
-        artikel = (RelativeLayout) getActivity().findViewById(R.id.rlt_artikel);
-        riwayat = (RelativeLayout) getActivity().findViewById(R.id.rlt_history);
+        graph = (ImageButton) getActivity().findViewById(R.id.rlt_graph);
+        artikel = (ImageButton) getActivity().findViewById(R.id.rlt_artikel);
+        riwayat = (ImageButton) getActivity().findViewById(R.id.rlt_history);
 
 
         artikel.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +45,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), RiwayatPasienActivity.class));
+            }
+        });
+
+        graph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), GraphActivity.class));
             }
         });
 

@@ -76,4 +76,10 @@
     </string-array>
 
     <string name="jargon">Be Smart to Keep Your Health</string>
+
+    <string-array name="graphChosen">
+        <item value="1">1 Bulan</item>
+        <item value="3">3 Bulan</item>
+        <item value="semua">Seumur Hidup</item>
+    </string-array>
 </resources>

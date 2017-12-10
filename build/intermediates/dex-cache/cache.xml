@@ -2,6 +2,15 @@
 <items version="2" >
 
     <item
+        is-multidex="true"
+        jar="C:\Users\Mr Abid\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v3.0.2\5d4eb08a326bdbd7fbbddc769666898c9936b282\MPAndroidChart-v3.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5d4eb08a326bdbd7fbbddc769666898c9936b282">
+        <dex dex="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v3.0.2_3d9b0c343f5c73e5e033ba50828c1d3d2cec8f76\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\Mr Abid\.android\build-cache\3747f651e43a6fffe37cc2465a726370d6db27f9\output\jars\classes.jar"
         jumboMode="false"
@@ -12,21 +21,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3d391a5ddf2a844db894bba5675892ddffdaca38">
+        <dex dex="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5d79dfc82258487533039d9df26bc14792889c9e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6e07f5020c8f143de7895d22962581ce74d46bbb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="86fd6dd232ebb3cdbe34188d63f3d9472571c3d7">
-        <dex dex="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5d79dfc82258487533039d9df26bc14792889c9e\classes.dex" />
     </item>
 
 </items>

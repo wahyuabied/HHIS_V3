@@ -20,9 +20,10 @@ public class Pasien {
     private String alamat;
     private String larangan;
     private String diagnosa;
+    private String image;
     private ArrayList <Dokter> dokter;
 
-    public Pasien(int id_pasien, int id_riwayat, String nama_pasien, int umur, String jenis_kelamin, String email, String golongan_darah, int tinggi_badan, int berat_badan, String no_telp, String alamat, String larangan, String diagnosa, ArrayList<Dokter> dokter) {
+    public Pasien(int id_pasien, int id_riwayat, String nama_pasien, int umur, String jenis_kelamin, String email, String golongan_darah, int tinggi_badan, int berat_badan, String no_telp, String alamat, String larangan, String diagnosa, String image) {
         this.id_pasien = id_pasien;
         this.id_riwayat = id_riwayat;
         this.nama_pasien = nama_pasien;
@@ -36,23 +37,15 @@ public class Pasien {
         this.alamat = alamat;
         this.larangan = larangan;
         this.diagnosa = diagnosa;
-        this.dokter = dokter;
+        this.image = image;
     }
 
-    public Pasien(int id_pasien, int id_riwayat, String nama_pasien, int umur, String jenis_kelamin, String email, String golongan_darah, int tinggi_badan, int berat_badan, String no_telp, String alamat, String larangan, String diagnosa) {
-        this.id_pasien = id_pasien;
-        this.id_riwayat = id_riwayat;
-        this.nama_pasien = nama_pasien;
-        this.umur = umur;
-        this.jenis_kelamin = jenis_kelamin;
-        this.email = email;
-        this.golongan_darah = golongan_darah;
-        this.tinggi_badan = tinggi_badan;
-        this.berat_badan = berat_badan;
-        this.no_telp = no_telp;
-        this.alamat = alamat;
-        this.larangan = larangan;
-        this.diagnosa = diagnosa;
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getAlamat() {

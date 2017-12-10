@@ -42,7 +42,9 @@
         <activity
             android:name=".Activity.BeforeMainActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Activity.DetailDokterActivity"></activity>
+        <activity android:name=".Activity.DetailDokterActivity" />
+        <activity android:name=".GraphActivity"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

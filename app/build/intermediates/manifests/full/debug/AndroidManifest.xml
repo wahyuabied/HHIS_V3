@@ -53,6 +53,9 @@
             android:name="com.mrabid.hhis.Activity.BeforeMainActivity"
             android:screenOrientation="portrait" />
         <activity android:name="com.mrabid.hhis.Activity.DetailDokterActivity" />
+        <activity
+            android:name="com.mrabid.hhis.GraphActivity"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

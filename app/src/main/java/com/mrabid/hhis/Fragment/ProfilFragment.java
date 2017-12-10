@@ -23,6 +23,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mrabid.hhis.Adapter.RecyclerDokterAdapter;
@@ -35,6 +36,8 @@ import com.mrabid.hhis.R;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfilFragment extends Fragment {
 
@@ -52,6 +55,7 @@ public class ProfilFragment extends Fragment {
     Gson gson;
     RequestQueue requestQueue;
     SharedPref sharedPref ;
+    CircleImageView imageProf;
 
     TextView nama,umur,jenisKelamin,emailPasien,golonganDarah,tinggiBadan,beratBadan,phone,alamat,larangan,penyakit,username,password,email,namaDokter,noTelpDokter,alamatPraktik,alamatRumah;
     ArrayList<Pasien> pasien = new ArrayList<>();
@@ -72,6 +76,7 @@ public class ProfilFragment extends Fragment {
         penyakit = (TextView)getActivity().findViewById(R.id.tv_diagnosa_profil);
         username = (TextView)getActivity().findViewById(R.id.tv_username_profil);
         password = (TextView)getActivity().findViewById(R.id.tv_password_profil);
+        imageProf = (CircleImageView)getActivity().findViewById(R.id.img_profil_profil);
 
         personalInformationDown = (ImageButton)getActivity().findViewById(R.id.img_personalInformation_profil_down);
         personalInformationUp = (ImageButton)getActivity().findViewById(R.id.img_personalInformation_profil_up);
@@ -273,12 +278,13 @@ public class ProfilFragment extends Fragment {
                                             posts.getData().get(i).getNo_telp(),
                                             posts.getData().get(i).getAlamat(),
                                             posts.getData().get(i).getLarangan(),
-                                            posts.getData().get(i).getDiagnosa()));
+                                            posts.getData().get(i).getDiagnosa(),
+                                            posts.getData().get(i).getImage()));
                                 }
 
                                 username.setText(pasien.get(0).getEmail());
                                 password.setText(sharedPref.loadData("password").toString());
-
+                                Glide.with(getActivity()).load("http://hhis.tk/backend/web/"+pasien.get(0).getImage()).into(imageProf);
                                 nama.setText(pasien.get(0).getNama_pasien().toString());
                                 umur.setText(String.valueOf(pasien.get(0).getUmur())+"tahun ,");
                                 jenisKelamin.setText(pasien.get(0).getJenis_kelamin());

@@ -24,7 +24,6 @@
                 android:layout_height="@dimen/_100sdp"
                 android:layout_alignParentRight="true"
                 android:id="@+id/img_profil_profil"
-                android:src="@drawable/profil"
                 android:layout_gravity="center"/>
 
             <TextView
@@ -468,10 +467,16 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:textColor="@color/black"
                     android:text="Password :"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_password_profil" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:id="@+id/tv_password_profil" />
+                </android.support.design.widget.TextInputLayout>
 
             </LinearLayout>
 

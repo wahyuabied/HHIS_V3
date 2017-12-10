@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:background="@color/themes"
+    android:titleTextAppearance="@dimen/_18sdp"
     android:layout_height="wrap_content"
     android:theme="@style/AppTheme"
     android:elevation="@dimen/_4sdp">

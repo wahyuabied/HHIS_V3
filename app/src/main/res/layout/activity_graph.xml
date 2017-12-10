@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrabid.hhis.GraphActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/main_toolbar"
+            android:id="@+id/toolbar"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_40sdp">
+            <Spinner
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/spn_bulan_graph"
+                android:background="@drawable/background_edit_text"
+                android:entries="@array/graphChosen"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/btn_bulan_graph"
+                android:textColor="@color/white"
+                android:text="Check"
+                android:background="@drawable/background_edit_text"
+                android:backgroundTint="@color/themes"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title_graph"
+            android:visibility="gone"
+            android:text="Your Diseases Graph"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:layout_gravity="center"/>
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:id="@+id/graph_graph"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="@dimen/_350sdp"/>
+
+    </LinearLayout>
+
+</ScrollView>

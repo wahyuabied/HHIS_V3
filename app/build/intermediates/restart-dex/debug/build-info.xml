@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="25"
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
     build-mode="FULL"
-    density="xhdpi"
+    density="hdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1511597368011"
+    timestamp="1512449995806"
     token="692281051610589424"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="12393" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="6532" />
+        duration="10006" />
     <task
         name="verifier"
-        duration="1197" />
+        duration="0" />
 
-    <artifact
-        location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
     <artifact
         location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
@@ -45,6 +42,9 @@
         location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
+        location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
         location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
@@ -62,11 +62,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1511597368011"
+        timestamp="1512449995806"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
         <artifact
             location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
@@ -84,6 +81,9 @@
             type="SPLIT" />
         <artifact
             location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="B:\Project_Android\Project_Maker\Android_HHIS-master\app\build\intermediates\split-apk\debug\slices\slice_3.apk"

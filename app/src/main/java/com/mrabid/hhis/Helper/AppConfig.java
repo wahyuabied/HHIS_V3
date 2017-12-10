@@ -20,5 +20,13 @@ public class AppConfig {
 
     public static String RIWAYAT = "http://hhis.tk/api/web/index.php/v1/riwayat/view?id_user=";
 
+    public static String GRAPHALL = "http://hhis.tk/api/web/index.php/v1/riwayat/grafik?id_user=";
+
+    public static String GRAPH3MONTHS = "http://hhis.tk/api/web/index.php/v1/riwayat/three_months?id_user=";
+
+    public static String GRAPH1MONTH = "http://hhis.tk/api/web/index.php/v1/riwayat/one_months?id_user=";
+
+    public static String PROFILSETTING = "http://hhis.tk/api/web/index.php/v1/setting/view?id_user=";
+
 
 }

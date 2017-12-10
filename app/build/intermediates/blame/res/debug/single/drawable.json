@@ -8,6 +8,10 @@
         "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\background_button_signup.xml"
     },
     {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu3.png",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\menu3.png"
+    },
+    {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
@@ -18,10 +22,6 @@
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\img_templar.jpg",
-        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\img_templar.jpg"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
@@ -52,6 +52,10 @@
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu2.png",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\menu2.png"
+    },
+    {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
@@ -72,16 +76,8 @@
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\setting.png",
-        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\setting.png"
-    },
-    {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\img_health1.jpg",
-        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\img_health1.jpg"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\history.png",
@@ -90,6 +86,10 @@
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\nonactivedot.xml",
         "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\nonactivedot.xml"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logonew.png",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\logonew.png"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
@@ -104,6 +104,10 @@
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\google.png",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\google.png"
+    },
+    {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
@@ -114,10 +118,6 @@
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\notification_bg_low.xml"
-    },
-    {
-        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hlthnews.jpg",
-        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\hlthnews.jpg"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backgroundbefore.jpg",
@@ -184,8 +184,8 @@
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\7e265adba95c376e08383b152e00f856628616c9\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pasien48.png",
-        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\pasien48.png"
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background2.jpg",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\background2.jpg"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
@@ -212,12 +212,20 @@
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu4.png",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\menu4.png"
+    },
+    {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\Mr Abid\\.android\\build-cache\\c8686fe4868f34f76638c54329e4075e4aa30c6e\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_tulisan.png",
         "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\logo_tulisan.png"
+    },
+    {
+        "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu1.png",
+        "source": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\src\\main\\res\\drawable\\menu1.png"
     },
     {
         "merged": "B:\\Project_Android\\Project_Maker\\Android_HHIS-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",

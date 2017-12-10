@@ -8,14 +8,16 @@
     android:background="@color/white"
     android:layout_width="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:background="@color/white"
         tools:context="com.mrabid.hhis.Fragment.HomeFragment">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_gravity="center_horizontal"
             android:layout_height="@dimen/_150sdp"
             android:id="@+id/imgv_judul_home"
             android:paddingRight="@dimen/_20sdp"
@@ -25,128 +27,74 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Check your Health"
-            android:layout_marginTop="-40dp"
+            android:layout_gravity="center"
             android:id="@+id/txt_judul_home"
             android:textSize="@dimen/_20sdp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
             android:textColor="@color/themes"
-            android:textStyle="bold"
-            android:layout_below="@+id/imgv_judul_home"/>
+            android:textStyle="bold" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:layout_width="@dimen/_160sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_5sdp"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:id="@+id/rlt_history"
-            android:layout_below="@+id/txt_judul_home">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="@dimen/_100sdp"
-                app:civ_border_width="@dimen/_2sdp"
-                app:civ_border_overlay="true"
-                android:layout_centerHorizontal="true"
-                app:civ_border_color="@color/history"
-                android:id="@+id/btn_History"
-                android:src="@drawable/ic_riwayat"/>
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="My History"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_below="@id/btn_History"
-                android:textSize="@dimen/_15sdp"
-                android:layout_centerHorizontal="true"/>
-        </RelativeLayout>
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/lnr_atas1_home"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_width="@dimen/_140sdp"
 
-        <RelativeLayout
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:id="@+id/rlt_artikel"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:layout_below="@+id/txt_judul_home">
+                        android:id="@+id/rlt_graph"
+                        android:layout_height="@dimen/_140sdp" />
+                </LinearLayout>
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="@dimen/_100sdp"
-                android:layout_centerHorizontal="true"
-                app:civ_border_width="@dimen/_2sdp"
-                app:civ_border_color="@color/bg_main"
-                app:civ_border_overlay="true"
-                android:id="@+id/btn_articleHome"
-                android:src="@drawable/ic_artikel"/>
-            <TextView
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_width="@dimen/_140sdp"
+
+                        android:id="@+id/rlt_history"
+                        android:layout_height="@dimen/_140sdp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Article"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_below="@+id/btn_articleHome"
-                android:textSize="@dimen/_15sdp"
-                android:layout_centerHorizontal="true"/>
-        </RelativeLayout>
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/lnr_atas2_home"
+                    android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="@dimen/_140sdp"
 
-        <RelativeLayout
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:id="@+id/rlt_graph"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:layout_marginBottom="@dimen/_5sdp"
-            android:layout_below="@+id/rlt_artikel">
+                    android:id="@+id/rlt_artikel"
+                    android:layout_height="@dimen/_140sdp" />
+                </LinearLayout>
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="@dimen/_100sdp"
-                android:id="@+id/btn_Graph"
-                app:civ_border_overlay="true"
-                app:civ_border_color="@color/themes"
-                app:civ_border_width="@dimen/_2sdp"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/ic_graph" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="My Graphic"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_below="@+id/btn_Graph"
-                android:textSize="@dimen/_15sdp"
-                android:layout_centerHorizontal="true"/>
-        </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_width="@dimen/_140sdp"
 
-        <RelativeLayout
-            android:layout_width="@dimen/_160sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/_5sdp"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:id="@+id/rlt_about"
-            android:layout_below="@+id/rlt_history">
+                        android:layout_height="@dimen/_140sdp" />
+                </LinearLayout>
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="@dimen/_100sdp"
-                android:id="@+id/btn_about"
-                app:civ_border_overlay="true"
-                app:civ_border_color="@color/about"
-                android:layout_centerHorizontal="true"
-                app:civ_border_width="@dimen/_2sdp"
-                android:src="@drawable/ic_about" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="About"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_below="@+id/btn_about"
-                android:textSize="@dimen/_15sdp"
-                android:layout_centerHorizontal="true"/>
-        </RelativeLayout>
-    </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 </ScrollView>
